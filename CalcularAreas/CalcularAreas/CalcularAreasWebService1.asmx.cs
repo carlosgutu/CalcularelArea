@@ -18,22 +18,22 @@ namespace CalcularAreas
     {
 
         [WebMethod]
-        public double CalcularCuadrado(string Dato1)
+        public string CalcularCuadrado(string Calcular)
         {
             Calcular c = new Calcular();
-            return c.CalcularCuadrado(Dato1);
+            return c.CalcularCuadrado(Calcular);
         }
         [WebMethod]
-        public string CalcularTriángulo(string Dato1, string Dato2)
+        public string CalcularTriángulo(string Base, string Altura)
         {
             Calcular c = new Calcular();
-            return c.CalcularTriángulo(Dato1, Dato2);
+            return c.CalcularTriángulo(Base, Altura);
         }
         [WebMethod]
-        public string CalcularCirculo(string Dato1)
+        public string CalcularCirculo(string Radio)
         {
             Calcular c = new Calcular();
-            return c.CalcularCirculo(Dato1);
+            return c.CalcularCirculo(Radio);
         }
     }
 }

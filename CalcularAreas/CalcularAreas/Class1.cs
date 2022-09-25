@@ -12,13 +12,12 @@ namespace CalcularAreas
         public double Altura { get; set; }   
         public double Radio { get; set; }
 
-        public double CalcularCuadrado(string Dato1)
+        public string CalcularCuadrado(string Dato1)
         {
             //Calcular el área de un cuadrado
-            double datos = double.Parse(Dato1);
-             resultado = Math.Pow(datos, 2);
+             resultado = Math.Pow(double.Parse(Dato1), 2);
             
-            return resultado;
+            return resultado.ToString();
         }
         public string CalcularTriángulo(string Dato1, string Dato2)
         {
