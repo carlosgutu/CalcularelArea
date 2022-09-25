@@ -67,9 +67,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CalcularAreasWebService1.asmx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CalcularAreasWebService1.asmx.cs">
+      <DependentUpon>CalcularAreasWebService1.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
